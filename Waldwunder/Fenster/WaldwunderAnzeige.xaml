@@ -1,0 +1,124 @@
+﻿<Window x:Class="Waldwunder.Fenster.WaldwunderAnzeige"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Waldwunder.Fenster"
+        mc:Ignorable="d"
+        Title="WaldwunderAnzeige" Height="450" Width="1200">
+    <Grid>
+        <!-- Grid-Definitions -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="13*"/>
+        </Grid.RowDefinitions>
+
+        <!-- ================================================== -->
+
+        <!-- Titel-->
+        <TextBlock Grid.Column="0" Grid.Row="0" 
+                   Text="Waldwunder Daten" 
+                   FontWeight="Bold" FontSize="18"
+                   VerticalAlignment="Center" HorizontalAlignment="Center"
+                   />
+
+        <TextBlock Grid.Column="1" Grid.Row="0" 
+                   Text="Bilder" 
+                   FontWeight="Bold" FontSize="18"
+                   VerticalAlignment="Center" HorizontalAlignment="Center"
+                   />
+
+        <!-- Waldwunder Daten-->
+        <Grid Grid.Column="0" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Content="Name:" VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="1" x:Name="NameBox" Text="{Binding Path=Name}"/>
+            </Grid>
+
+            <Grid Grid.Row="1" Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Content="Beschreibung:" VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="1" x:Name="BeschreibungBox" Text="{Binding Path=Description}"/>
+            </Grid>
+
+            <Grid Grid.Row="2" Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Content="Provinz:" VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="1" x:Name="ProvinzBox" Text="{Binding Path=Province}"/>
+            </Grid>
+
+            <Grid Grid.Row="3" Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Content="Lat:" VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="1" x:Name="LatBox" Text="{Binding Path=Latitude}"/>
+            </Grid>
+
+            <Grid Grid.Row="4" Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Content="Long:" VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="1" x:Name="LongBox" Text="{Binding Path=Longitude}"/>
+            </Grid>
+
+            <Grid Grid.Row="5" Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Content="Art:" VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="1" x:Name="ArtBox" Text="{Binding Path=Type}"/>
+            </Grid>
+
+            <Grid Grid.Row="6" Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Content="Stimmen:" VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="1" x:Name="StimmenBox" Text="{Binding Path=Votes}"/>
+            </Grid>
+        </Grid>
+
+
+        <!-- Bilder -->
+        <UniformGrid Grid.Column="1" Grid.Row="1" Margin="5" x:Name="UniGrid" />
+
+    </Grid>
+</Window>

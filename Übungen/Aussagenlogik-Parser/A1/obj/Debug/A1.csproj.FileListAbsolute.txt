@@ -1,0 +1,19 @@
+\\ipdata-if\scw$\documents\visual studio 2015\Projects\A1\A1\bin\Debug\A1.exe.config
+C:\Users\wegho\Downloads\POS-Matura\Übungen\Aussagenlogik-Parser\A1\bin\Debug\A1.exe.config
+C:\Users\wegho\Downloads\POS-Matura\Übungen\Aussagenlogik-Parser\A1\bin\Debug\A1.exe
+C:\Users\wegho\Downloads\POS-Matura\Übungen\Aussagenlogik-Parser\A1\bin\Debug\A1.pdb
+C:\Users\wegho\Downloads\POS-Matura\Übungen\Aussagenlogik-Parser\A1\bin\Debug\KV.dll
+C:\Users\wegho\Downloads\POS-Matura\Übungen\Aussagenlogik-Parser\A1\obj\Debug\A1.csproj.AssemblyReference.cache
+C:\Users\wegho\Downloads\POS-Matura\Übungen\Aussagenlogik-Parser\A1\obj\Debug\A1.exe.config
+C:\Users\wegho\Downloads\POS-Matura\Übungen\Aussagenlogik-Parser\A1\obj\Debug\MainWindow.g.cs
+C:\Users\wegho\Downloads\POS-Matura\Übungen\Aussagenlogik-Parser\A1\obj\Debug\App.g.cs
+C:\Users\wegho\Downloads\POS-Matura\Übungen\Aussagenlogik-Parser\A1\obj\Debug\A1_MarkupCompile.cache
+C:\Users\wegho\Downloads\POS-Matura\Übungen\Aussagenlogik-Parser\A1\obj\Debug\A1_MarkupCompile.lref
+C:\Users\wegho\Downloads\POS-Matura\Übungen\Aussagenlogik-Parser\A1\obj\Debug\MainWindow.baml
+C:\Users\wegho\Downloads\POS-Matura\Übungen\Aussagenlogik-Parser\A1\obj\Debug\A1.g.resources
+C:\Users\wegho\Downloads\POS-Matura\Übungen\Aussagenlogik-Parser\A1\obj\Debug\A1.Properties.Resources.resources
+C:\Users\wegho\Downloads\POS-Matura\Übungen\Aussagenlogik-Parser\A1\obj\Debug\A1.csproj.GenerateResource.cache
+C:\Users\wegho\Downloads\POS-Matura\Übungen\Aussagenlogik-Parser\A1\obj\Debug\A1.csproj.CoreCompileInputs.cache
+C:\Users\wegho\Downloads\POS-Matura\Übungen\Aussagenlogik-Parser\A1\obj\Debug\A1.csproj.Up2Date
+C:\Users\wegho\Downloads\POS-Matura\Übungen\Aussagenlogik-Parser\A1\obj\Debug\A1.exe
+C:\Users\wegho\Downloads\POS-Matura\Übungen\Aussagenlogik-Parser\A1\obj\Debug\A1.pdb

@@ -1,0 +1,12 @@
+﻿
+<Negation> ::= !
+<Operator> ::= & | "|" | > | =
+<Buchstabe> ::= a | b | c | ... | y | z
+<KlammerAuf> ::= (
+<KlammerZu> ::= )
+
+<Atom> ::= <Buchstabe> | <KlammerAuf> <Ausdruck> <KlammerZu>
+
+<NegierterAusdruck> ::= <Negation> <NegierterAusdruck> | <Atom> 
+
+<Ausdruck> ::= <NegierterAusdruck> [ <Operator> <Ausdruck> ]

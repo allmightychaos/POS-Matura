@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "4u3u8xFtSGM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\wegho\\Downloads\\POS-Matura\\Waldwunder\\Waldwunder.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wegho\\.nuget\\packages\\linq2db\\6.2.1\\linq2db.6.2.1.nupkg.sha512",
+    "C:\\Users\\wegho\\.nuget\\packages\\linq2db.sqlite\\6.2.1\\linq2db.sqlite.6.2.1.nupkg.sha512",
+    "C:\\Users\\wegho\\.nuget\\packages\\microsoft.data.sqlite\\10.0.7\\microsoft.data.sqlite.10.0.7.nupkg.sha512",
+    "C:\\Users\\wegho\\.nuget\\packages\\microsoft.data.sqlite.core\\10.0.7\\microsoft.data.sqlite.core.10.0.7.nupkg.sha512",
+    "C:\\Users\\wegho\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.11\\sqlitepclraw.bundle_e_sqlite3.2.1.11.nupkg.sha512",
+    "C:\\Users\\wegho\\.nuget\\packages\\sqlitepclraw.core\\2.1.11\\sqlitepclraw.core.2.1.11.nupkg.sha512",
+    "C:\\Users\\wegho\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.11\\sqlitepclraw.lib.e_sqlite3.2.1.11.nupkg.sha512",
+    "C:\\Users\\wegho\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.11\\sqlitepclraw.provider.e_sqlite3.2.1.11.nupkg.sha512",
+    "C:\\Users\\wegho\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}
