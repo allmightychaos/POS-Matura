@@ -12,7 +12,7 @@ namespace SimpleThreadApp
         static object lockObj = new object();
         static List<int> allPrims = new List<int>();
 
-        static void Main(string[] args)
+        static void OldMain(string[] args)
         {
             int threadsCount = int.Parse(args[0]);  // Anzahl an Threads
             int primMax = int.Parse(args[1]);       // Maximale Zahl zum überprüfen

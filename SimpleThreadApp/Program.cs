@@ -16,14 +16,17 @@ namespace SimpleThreadApp
                     Console.WriteLine("ID: {0,3} Counter: {1,8} Modulo: {2}", id, counter, counter % id);
                 }
 
+                /*
                 lock (lockObj)
                 {
                     counter++;
                 }
+                */
+                counter++;
             }
         }
 
-        public static void OldMain(string[] args)
+        public static void Main(string[] args)
         {
             int threadCounter = int.Parse(args[0]);
             int iterCounter = int.Parse(args[1]);

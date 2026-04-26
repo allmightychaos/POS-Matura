@@ -9,6 +9,12 @@
         mc:Ignorable="d"
         Title="Matura 2023 Aufgabe 2" Height="450" Width="800">
     <DockPanel>
-        
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_Neues Spiel" Click="MenuItem_Click"/>
+        </Menu>
+
+        <UniformGrid x:Name="UniGrid">
+            
+        </UniformGrid>
     </DockPanel>
 </Window>
