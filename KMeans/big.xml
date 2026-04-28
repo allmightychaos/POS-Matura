@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<People xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Person>
+    <Name>Subject_01</Name>
+    <PixelX>245.3</PixelX>
+    <PixelY>12.8</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_02</Name>
+    <PixelX>54.1</PixelX>
+    <PixelY>310.5</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_03</Name>
+    <PixelX>188.9</PixelX>
+    <PixelY>202.4</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_04</Name>
+    <PixelX>321.0</PixelX>
+    <PixelY>45.7</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_05</Name>
+    <PixelX>12.4</PixelX>
+    <PixelY>388.1</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_06</Name>
+    <PixelX>276.5</PixelX>
+    <PixelY>156.3</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_07</Name>
+    <PixelX>99.2</PixelX>
+    <PixelY>234.9</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_08</Name>
+    <PixelX>350.6</PixelX>
+    <PixelY>18.2</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_09</Name>
+    <PixelX>210.3</PixelX>
+    <PixelY>299.8</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_10</Name>
+    <PixelX>44.7</PixelX>
+    <PixelY>112.5</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_11</Name>
+    <PixelX>167.4</PixelX>
+    <PixelY>370.2</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_12</Name>
+    <PixelX>290.1</PixelX>
+    <PixelY>88.6</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_13</Name>
+    <PixelX>13.8</PixelX>
+    <PixelY>205.4</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_14</Name>
+    <PixelX>380.5</PixelX>
+    <PixelY>144.1</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_15</Name>
+    <PixelX>222.7</PixelX>
+    <PixelY>333.9</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_16</Name>
+    <PixelX>66.9</PixelX>
+    <PixelY>50.2</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_17</Name>
+    <PixelX>199.3</PixelX>
+    <PixelY>199.3</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_18</Name>
+    <PixelX>315.6</PixelX>
+    <PixelY>280.4</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_19</Name>
+    <PixelX>8.2</PixelX>
+    <PixelY>77.1</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_20</Name>
+    <PixelX>366.4</PixelX>
+    <PixelY>366.4</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_21</Name>
+    <PixelX>145.2</PixelX>
+    <PixelY>19.5</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_22</Name>
+    <PixelX>278.9</PixelX>
+    <PixelY>210.7</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_23</Name>
+    <PixelX>101.4</PixelX>
+    <PixelY>390.3</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_24</Name>
+    <PixelX>33.6</PixelX>
+    <PixelY>125.8</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_25</Name>
+    <PixelX>250.0</PixelX>
+    <PixelY>250.0</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_26</Name>
+    <PixelX>180.7</PixelX>
+    <PixelY>44.2</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_27</Name>
+    <PixelX>395.1</PixelX>
+    <PixelY>312.9</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_28</Name>
+    <PixelX>115.3</PixelX>
+    <PixelY>167.8</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_29</Name>
+    <PixelX>49.8</PixelX>
+    <PixelY>22.4</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_30</Name>
+    <PixelX>305.2</PixelX>
+    <PixelY>380.6</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_31</Name>
+    <PixelX>211.9</PixelX>
+    <PixelY>120.1</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_32</Name>
+    <PixelX>75.4</PixelX>
+    <PixelY>345.7</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_33</Name>
+    <PixelX>138.6</PixelX>
+    <PixelY>92.3</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_34</Name>
+    <PixelX>288.4</PixelX>
+    <PixelY>266.1</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_35</Name>
+    <PixelX>355.2</PixelX>
+    <PixelY>175.9</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_36</Name>
+    <PixelX>20.8</PixelX>
+    <PixelY>55.4</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_37</Name>
+    <PixelX>160.1</PixelX>
+    <PixelY>305.8</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_38</Name>
+    <PixelX>340.9</PixelX>
+    <PixelY>110.2</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_39</Name>
+    <PixelX>92.3</PixelX>
+    <PixelY>280.7</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_40</Name>
+    <PixelX>230.5</PixelX>
+    <PixelY>39.1</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_41</Name>
+    <PixelX>11.7</PixelX>
+    <PixelY>180.3</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_42</Name>
+    <PixelX>377.2</PixelX>
+    <PixelY>350.4</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_43</Name>
+    <PixelX>195.4</PixelX>
+    <PixelY>222.1</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_44</Name>
+    <PixelX>58.9</PixelX>
+    <PixelY>95.6</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_45</Name>
+    <PixelX>281.3</PixelX>
+    <PixelY>133.7</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Subject_46</Name>
+    <PixelX>128.0</PixelX>
+    <PixelY>2

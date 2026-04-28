@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<People xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Person>
+    <Name>Musterfrau</Name>
+    <PixelX>120.5</PixelX>
+    <PixelY>300.2</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+  <Person>
+    <Name>Mustermann</Name>
+    <PixelX>50</PixelX>
+    <PixelY>45.8</PixelY>
+    <clusterID xsi:nil="true" />
+  </Person>
+</People>
