@@ -1,12 +1,11 @@
-﻿using Microsoft.Win32;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Xml.Serialization;
 
 namespace PixelDraw
 {
@@ -17,7 +16,7 @@ namespace PixelDraw
     {
         private static readonly int imageWidth = 390;
         private static readonly int imageHeigth = 500;
-        
+
 
         public Color Color { get; set; } = Colors.Black;
 
@@ -119,7 +118,7 @@ namespace PixelDraw
 
         private void Clean()
         {
-            BitmapImage bitmap = new BitmapImage(new Uri("pack://application:,,,/Background.png"));
+            BitmapImage bitmap = new BitmapImage(new Uri("pack://application:,,,/Images/Background.png"));
             //_wb = new WriteableBitmap(imageWidth, imageHeigth, 96, 96, PixelFormats.Bgra32, null);
             _wb = new WriteableBitmap(bitmap);
             _bytesPerPixel = (_wb.Format.BitsPerPixel + 7) / 8;
@@ -130,8 +129,9 @@ namespace PixelDraw
 
         #endregion
 
+        // ==================================================================================================== \\
 
-        private void drawing_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        private async void drawing_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             //Beispiel LeftButtonDown auf Image mit Umrechnung in Pixelkoordinaten
             Point p = e.GetPosition(drawing);
@@ -142,10 +142,48 @@ namespace PixelDraw
             Color _new = Color;
             if (!old.Equals(_new))
             {
-                setPixelThreaded(Color, p.X, p.Y);  
+                int width = _wb.PixelWidth;
+                int height = _wb.PixelHeight;
+
+                await Task.Run(() =>
+                {
+                    fill4_Threaded((int)p.X, (int)p.Y, old, _new, width, height);
+                });
+                // setPixelThreaded(Color, p.X, p.Y);
             }
         }
 
-        
+        private void fill4_Threaded(int startX, int startY, Color oldColor, Color newColor, int width, int height)
+        {
+            if (oldColor.Equals(newColor)) return;
+
+            // Wir erstellen einen eigenen Stapel auf dem Heap
+            Stack<Point> pixelStack = new Stack<Point>();
+            pixelStack.Push(new Point(startX, startY));
+
+            while (pixelStack.Count > 0)
+            {
+                Point p = pixelStack.Pop();
+                int x = (int)p.X;
+                int y = (int)p.Y;
+
+                // Randprüfung (Wichtig: >= 0, nicht > 0!)
+                if (x < 0 || x >= width || y < 0 || y >= height)
+                    continue;
+
+                // Farbe prüfen (über den Dispatcher)
+                if (getPixelThreaded(x, y) == oldColor)
+                {
+                    // Pixel setzen (über den Dispatcher)
+                    setPixelThreaded(newColor, x, y);
+
+                    // Die 4 Nachbarn auf den Stapel legen
+                    pixelStack.Push(new Point(x - 1, y));
+                    pixelStack.Push(new Point(x + 1, y));
+                    pixelStack.Push(new Point(x, y - 1));
+                    pixelStack.Push(new Point(x, y + 1));
+                }
+            }
+        }
     }
 }

@@ -12,7 +12,7 @@
         </StackPanel>
     <Grid Width="390" Height="500">
         <Image Name="drawing" Stretch="Uniform" MouseLeftButtonDown="drawing_MouseLeftButtonDown"/>
-        <Image Name="overlay" Stretch="Uniform" IsHitTestVisible="False" Source="/Overlay.png"/>
+        <Image Name="overlay" Stretch="Uniform" IsHitTestVisible="False" Source="/Images/Overlay.png"/>
     </Grid>
     </DockPanel>
 </Window>
