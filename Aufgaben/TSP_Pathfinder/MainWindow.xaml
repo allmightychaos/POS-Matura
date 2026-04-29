@@ -1,0 +1,35 @@
+﻿<Window x:Class="TSP_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TSP &amp; Pathfinding Solver" Height="600" Width="900">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Background="#F0F0F0" Margin="0,0,5,0">
+            <TextBlock Text="Steuerung" FontSize="18" FontWeight="Bold" Margin="10,10,10,20" HorizontalAlignment="Center"/>
+
+            <Button Content="Zufällige Städte generieren" Margin="10,5" Padding="5" Click="BtnGenerateRandom_Click"/>
+            <Button Content="Leeren" Margin="10,5" Padding="5" Click="BtnClear_Click"/>
+
+            <Separator Margin="10,10"/>
+
+            <Button Content="Graph (Wegenetz) generieren" Margin="10,5" Padding="5" Click="BtnGenerateGraph_Click" Background="#E0E8F5" FontWeight="SemiBold"/>
+
+            <Separator Margin="10,10"/>
+
+            <TextBlock Text="Algorithmen" FontSize="16" FontWeight="SemiBold" Margin="10,0,10,10" HorizontalAlignment="Center"/>
+            <Button Content="1. Nearest Neighbor" Margin="10,5" Padding="5" Click="BtnNearestNeighbor_Click"/>
+            <Button Content="2. Dijkstra" Margin="10,5" Padding="5" Click="BtnDijkstra_Click"/>
+            <Button Content="3. A* (A-Star)" Margin="10,5" Padding="5" Click="BtnAStar_Click"/>
+
+            <TextBlock Text="(Klicke auf das rechte Feld, um Städte manuell hinzuzufügen)" TextWrapping="Wrap" Margin="10,30,10,0" Foreground="DimGray" FontStyle="Italic"/>
+        </StackPanel>
+
+        <Border Grid.Column="1" BorderBrush="Gray" BorderThickness="1">
+            <Canvas x:Name="MapCanvas" Background="White" MouseDown="MapCanvas_MouseDown" ClipToBounds="True"/>
+        </Border>
+    </Grid>
+</Window>
