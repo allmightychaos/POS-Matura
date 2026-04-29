@@ -1,0 +1,41 @@
+befehl: turn on, turn off
+geräte: lamp, heater, tv
+räume: bath, livingroom
+
+befehl: turn on lamp in bath
+
+wenn-dann: if sensor (temp/time) vergleich (<, >) zahl (0-9) then "{" befehl "}"
+
+TURN ON LAMP IN LIVINGROOM
+IF TEMP < 2 THEN {
+    TURN ON HEATER IN BATH
+    TURN OFF TV IN LIVINGROOM
+}
+IF TIME > 8 THEN {
+    IF TEMP < 5 THEN {
+        TURN ON HEATER IN LIVINGROOM
+    }
+}
+
+---
+
+<COMMANDS>  ::= "TURN ON" | "TURN OFF"
+<GERAETE>   ::= "LAMP" | "HEATER" | "TV" 
+<RAEUME>    ::= "BATH" | "LIVINGROOM" 
+<SENSOR>    ::= "TEMP" | "TIME" 
+<VERGLEICH> ::= "<" | ">" 
+<ZIFFER>    ::= "0" | "1" | ... | "9"
+<ZAHL>      ::= <ZIFFER> | <ZIFFER> <ZAHL>
+
+--- sonstige "IF", "THEN", "{", "}", "IN"
+
+---
+
+<BEFEHL> ::= <COMMANDS> <GERAETE> "IN" <RAEUME>
+<VERZWEIGUNG> ::= <BEFEHL> | "IF" <SENSOR> <VERGLEICH> <ZAHL> "THEN" "{" <PROGRAM> "}"
+
+<STATEMENT> ::= <BEFEHL> | <VERZWEIGUNG> 
+<PROGRAM> ::= <STATEMENT> | <STATEMENT> <PROGRAM> 
+
+
+

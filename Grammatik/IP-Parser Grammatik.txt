@@ -1,0 +1,23 @@
+<VARIABLE> ::= "s" | "q" | "r" | "p" 
+<OPERATOR> ::= "&" | "|" | ">" | "="
+
+--- Stufe 1: ---
+<WERT> ::= <VARIABLE> | "(" <PROGRAM> ")"
+
+--- Stufe 2: ----
+<NEGATION> ::= <WERT> | "-" <NEGATION>
+
+--- Stufe 3: ---
+<UND_AUSDRUCH> ::= <NEGATION> | <NEGATION> "&" <UND_AUSDRUCH>
+
+--- Stufe 4: ---
+<ODER_AUSDRUCH> ::= <UND_AUSDRUCH> | <UND_AUSDRUCK> "|" <ODER_AUSDRUCK> 
+
+--- Stufe 5: ---
+<IMPLIKATION> ::= <ODER_AUSDRUCK> | <ODER_AUSDRUCK> ">" <IMPLIKATION> 
+
+--- STUFE 6: ---
+<AEQUIVALENZ> ::= <IMPLIKATION> | <IMPLIKATION> "=" <AEQUIVALENZ> 
+
+--- Start: ---
+<PROGRAM> ::= <AEQUIVALENZ>

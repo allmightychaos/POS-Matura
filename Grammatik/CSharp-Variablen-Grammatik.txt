@@ -1,0 +1,35 @@
+int / strings
+a, b, …, z
+= 
+
++, -
+
+"abc"
+
+;
+
+
+int x = 5 + 10 - 2;
+string a = "hallo";
+int y = 42;
+
+---
+
+<VARIABLE> ::= "a" | "b" | … | "z" 
+<OPERATOR> ::= "+" | "-" 
+<ZIFFER>   ::= "0" | "1" | … | "9"
+<ZAHL>	   ::= <ZIFFER> | <ZIFFER> <ZAHL>
+
+---
+
+<WERT>		::= <ZAHL> | "(" <RECHNUNG> ")"
+<ZEICHEN>	::= <VARIABLE> | <VARIABLE> <ZEICHEN> 
+
+<RECHNUNG>     	::= <WERT> | <WERT> <OPERATION> <RECHNUNG>
+<ZEICHENKETTE> 	::= "\"" <ZEICHEN> "\""
+
+<INT>		::= <VARIABLE> "=" <RECHNUNG>
+<STRING>	::= <VARIABLE> "=" <ZEICHENKETTE>
+
+<STATEMENT> 	::= "int" <INT> | "string" <STRING> 
+<PROGRAM>	::= <STATEMENT> ";" | <STATEMENT> ";" <PROGRAM>

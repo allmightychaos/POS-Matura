@@ -1,0 +1,30 @@
+REPEAT <Number>
+
+MOVE <DIRECTION>
+
+{ }
+
+COLLECT
+
+UNTIL <DIRECTION> 
+
+IS-A OBSTACLE
+
+IF <DIRECTION> 
+
+-------
+
+<DIRECTION> ::= UP | DOWN | RIGHT | LEFT
+
+<NUMBER> ::= 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+
+<LOOP> ::= IF | UNTIL
+
+
+<ANWEISUNG> ::= "MOVE" <DIRECTION> | "COLLECT" 
+
+<SCHLEIFE> ::= <LOOP> <DIRECTION> "IS-A" "OBSTACLE" "{" <PROGRAM> "}"
+
+<REPEAT> ::= "REPEAT" <NUMBER> "{" <PROGRAM> "}"
+
+<PROGRAM> ::= <ANWEISUNG> | <ANWEISUNG> <PROGRAM> | <SCHLEIFE> | <REPEAT> 
