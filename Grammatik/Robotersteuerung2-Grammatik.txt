@@ -1,0 +1,23 @@
+<RICHTUNG>  ::= "LEFT" | "RIGHT" | "UP" | "DOWN"
+<BUCHSTABE> ::= "A" | "B" | ... | "Z"
+
+<ZIFFER>    ::= "0" | "1" | ... | "9"
+<ZAHL>	    ::= <ZIFFER> | <ZIFFER> <ZAHL>
+
+---
+
+<OBSTACLE>	::= "OBSTACLE" | <BUCHSTABE>
+<KLAMMER>	::= "{" <PROGRAM> "}"
+
+---
+
+<BEFEHL>	::= "MOVE" <RICHTUNG> | "COLLECT"
+
+
+<WENN>		::= <BEFEHL> | "IF" <RICHTUNG> "IS-A" <OBSTACLE> <KLAMMER>
+<UNTIL>		::= <BEFEHL> | "UNTIL" <RICHTUNG> "IS-A" <OBSTACLE> <KLAMMER>
+<SCHLEIFE>	::= <BEFEHL> | "REPEAT" <ZAHL> <KLAMMER>
+
+
+<STATEMENT>	::= <BEFEHL> | <SCHLEIFE> | <UNTIL> | <WENN>
+<PROGRAM>	::= <STATEMENT> | <STATEMENT> <PROGRAM>
