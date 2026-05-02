@@ -3,18 +3,17 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net9.0-windows</TargetFramework>
-    <RootNamespace>Gw2_Travelling</RootNamespace>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Tyria_map.jpg" />
+    <None Remove="racoon_swimming.jpg" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Tyria_map.jpg" />
+    <Resource Include="racoon_swimming.jpg" />
   </ItemGroup>
 
 </Project>

@@ -5,8 +5,61 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gw2_Travelling"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="1120" Width="1000">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
 
+        <StackPanel Grid.Column="0" Margin="5">
+            <Grid Height="30">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <TextBlock FontSize="18" VerticalAlignment="Center" Grid.Column="0">
+                    <Run Text="X: " FontWeight="Bold"/>
+                    <Run Text="{Binding posX}" Foreground="DarkGray"/>
+                </TextBlock>
+                <TextBlock FontSize="18" VerticalAlignment="Center" Grid.Column="1">
+                    <Run Text="Y: " FontWeight="Bold"/>
+                    <Run Text="{Binding posY}" Foreground="DarkGray"/>
+                </TextBlock>
+            </Grid>
+
+            <Button Content="Koordinaten kopieren" 
+                    Click="Copy_Click" Margin="0 5"
+                    Height="30" IsEnabled="False"
+                    x:Name="copyBtn"
+                    />
+
+
+            <Separator />
+
+            <TextBlock FontSize="16" VerticalAlignment="Center" Margin="0 5">
+                <Run Text="Wegmarken: " FontWeight="Bold"/>
+                <Run Text="{Binding wpCount}" Foreground="DarkGray"/>
+            </TextBlock>
+
+            <Separator />
+
+            <Button x:Name="SalesBtn" Content="Travelling Salesman" Height="30" Margin="0 5" IsEnabled="False" Click="Travelling_Click"/>
+
+            <Separator />
+
+            <Button x:Name="DjiBtn" Content="Djikstra" Height="30" Margin="0 5" IsEnabled="False" Click="Djikstra_Click"/>
+
+            <Button x:Name="AstarBtn" Content="A* Algo" Height="30" Margin="0 2" IsEnabled="False" Click="A_star_Click"/>
+
+        </StackPanel>
+
+        <Viewbox Grid.Column="1">
+            <Grid>
+                <Image Source="/Tyria_map.jpg" MouseDown="Gw2Canvas_MouseDown" MouseMove="Gw2Canvas_MouseMove"/>
+                <Canvas x:Name="Gw2Canvas" ClipToBounds="True"/>
+            </Grid>
+        </Viewbox>
     </Grid>
 </Window>
