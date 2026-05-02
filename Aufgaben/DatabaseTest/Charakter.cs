@@ -1,16 +1,17 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.Data.Sqlite;
+using System.Linq;
 using LinqToDB.Mapping;
 
 namespace DatabaseTest
 {
-    [Table("Charakter")]
-    public class Charakter
+    [Table("Character")]
+    internal class Charakter
     {
-        [Column("id", IsPrimaryKey = true, IsIdentity = true, SkipOnInsert = true, SkipOnUpdate = true)]
-        public int id { get; set; }
+        [Column("ID", IsPrimaryKey = true, SkipOnInsert = true, SkipOnUpdate = true)]
+        public int id {  get; set; }
 
-        [Column("CharakterName")]
-        public string charName { get; set; }
+        [Column("CharacterName")]
+        public string name { get; set; }
 
         [Column("Klasse")]
         public string klasse { get; set; }

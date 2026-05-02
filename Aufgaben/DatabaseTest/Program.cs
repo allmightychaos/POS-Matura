@@ -1,37 +1,33 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
 using DatabaseTest;
 using LinqToDB;
 
-Console.WriteLine("Hello, World!");
+var options = new DataOptions().UseSQLite("Data Source=gw2.db");
 
-DataOptions options = new DataOptions().UseSQLite("Data Source=gw2.db");
-var ctx = new TestDb(new DataOptions<TestDb>(options));
+var ctx = new DbTest(new DataOptions<DbTest>(options));
 
-// table erstellen
 try
 {
     ctx.CreateTable<Charakter>();
 }
-catch (Exception)
+catch
 {
+    Console.WriteLine("Table exists already!");
 }
 
-// ausgabe 1
-List<Charakter> alle = ctx.Charakter.ToList();
-
+// --- new datarow --- \\
 
 Charakter charakter = new Charakter()
 {
-    charName = "Allmightychaos",
+    name = "Allmightychaos",
     klasse = "Waldläufer",
     level = 80
 };
 
 ctx.Insert(charakter);
 
-alle = ctx.Charakter.ToList();
-
-foreach (var c in alle)
+foreach (var item in ctx.GetTable<Charakter>())
 {
-    Console.WriteLine($"{c.id} | {c.charName} | {c.klasse} | {c.level}");
+    Console.WriteLine($"Name: {item.name} | Klasse: {item.klasse} | Level: {item.level}");
 }
+
