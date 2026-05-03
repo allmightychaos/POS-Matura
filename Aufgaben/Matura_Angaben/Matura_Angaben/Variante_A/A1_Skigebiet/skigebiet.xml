@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Skigebiet>
+  <Stationen>
+    <Station Id="1" Name="Talstation" X="500" Y="600" />
+    <Station Id="2" Name="Mittelstation" X="500" Y="380" />
+    <Station Id="3" Name="Bergstation" X="500" Y="100" />
+    <Station Id="4" Name="Westgipfel" X="200" Y="150" />
+    <Station Id="5" Name="Ostgipfel" X="800" Y="150" />
+    <Station Id="6" Name="Almgasthaus" X="350" Y="470" />
+    <Station Id="7" Name="Gondel-Mitte" X="700" Y="400" />
+  </Stationen>
+  <Verbindungen>
+    <!-- Lifte: nach oben, mit Kapazitaet (mehrere Skifahrer gleichzeitig) -->
+    <Lift Von="1" Nach="2" Name="Sesselbahn 1" Kapazitaet="4" FahrzeitSek="60" />
+    <Lift Von="2" Nach="3" Name="Gondel Bergstation" Kapazitaet="8" FahrzeitSek="90" />
+    <Lift Von="2" Nach="4" Name="Sesselbahn West" Kapazitaet="6" FahrzeitSek="75" />
+    <Lift Von="2" Nach="7" Name="Schlepplift Mitte" Kapazitaet="2" FahrzeitSek="50" />
+    <Lift Von="7" Nach="5" Name="Sesselbahn Ost" Kapazitaet="4" FahrzeitSek="80" />
+    <Lift Von="6" Nach="2" Name="Verbindungslift" Kapazitaet="3" FahrzeitSek="55" />
+    <!-- Pisten: nach unten, ohne Kapazitaetsbegrenzung -->
+    <Piste Von="3" Nach="2" Name="Bergabfahrt" FahrzeitSek="40" />
+    <Piste Von="3" Nach="6" Name="Almpiste" FahrzeitSek="50" />
+    <Piste Von="4" Nach="6" Name="Westabfahrt" FahrzeitSek="35" />
+    <Piste Von="6" Nach="1" Name="Talabfahrt" FahrzeitSek="45" />
+    <Piste Von="2" Nach="1" Name="Familienabfahrt" FahrzeitSek="30" />
+    <Piste Von="5" Nach="7" Name="Ostabfahrt" FahrzeitSek="50" />
+    <Piste Von="7" Nach="6" Name="Verbindungspiste" FahrzeitSek="30" />
+    <Piste Von="4" Nach="2" Name="Westmittelpiste" FahrzeitSek="40" />
+  </Verbindungen>
+</Skigebiet>

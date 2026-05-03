@@ -1,0 +1,14 @@
+LAMPE Wohnzimmer Decke EIN
+DIMMEN Wohnzimmer Decke 60
+WARTE 3
+WENN Helligkeit Wohnzimmer KLEINER 20 DANN {
+    LAMPE Wohnzimmer Decke EIN
+    DIMMEN Wohnzimmer Decke 100
+    LAMPE Wohnzimmer Stehlampe EIN
+}
+WARTE 2
+LAMPE Schlafzimmer Decke EIN
+DIMMEN Schlafzimmer Decke 30
+WENN Temperatur Schlafzimmer GROESSER 24 DANN {
+    LAMPE Schlafzimmer Decke AUS
+}

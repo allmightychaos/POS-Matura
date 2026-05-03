@@ -1,0 +1,41 @@
+Id;Titel;AutorId;GenreId;Verfuegbar
+1;Es;1;11;true
+2;Shining;1;11;true
+3;Misery;1;11;false
+4;Der Herr der Ringe;2;14;true
+5;Der Hobbit;2;14;true
+6;Das Silmarillion;2;14;false
+7;Mord im Orient-Express;3;12;true
+8;Und dann gabs keines mehr;3;12;true
+9;Foundation;4;13;true
+10;Ich der Roboter;4;13;true
+11;Stolz und Vorurteil;5;6;true
+12;Emma;5;6;false
+13;1984;6;13;true
+14;Animal Farm;6;1;true
+15;Dune;7;13;true
+16;Dune Messias;7;13;false
+17;Sherlock Holmes - Eine Studie in Scharlachrot;8;12;true
+18;Sherlock Holmes - Das Zeichen der Vier;8;12;true
+19;Schachnovelle;9;6;true
+20;Sapiens - Eine kurze Geschichte der Menschheit;10;8;true
+21;Homo Deus;10;8;true
+22;Eine kurze Geschichte der Zeit;20;15;true
+23;Das Universum in der Nussschale;20;16;false
+24;Cosmos;12;16;true
+25;Erdwind das blaue Wunder;13;14;true
+26;Der Name des Windes;14;14;true
+27;Die Furcht des Weisen;14;14;true
+28;Der Distelfink;15;1;true
+29;Die geheime Geschichte;15;1;true
+30;Der Richter und sein Henker;16;3;true
+31;Der Verdacht;16;3;false
+32;Der Vorleser;17;1;true
+33;Selbs Justiz;17;3;true
+34;Die Vermessung der Welt;18;1;true
+35;Tyll;18;1;true
+36;Blade Runner;19;13;true
+37;Ubik;19;13;true
+38;Vita activa;11;10;true
+39;Elemente und Urspruenge totaler Herrschaft;11;10;false
+40;Eichmann in Jerusalem;11;9;true

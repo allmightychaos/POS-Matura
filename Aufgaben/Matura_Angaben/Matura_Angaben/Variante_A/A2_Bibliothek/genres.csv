@@ -1,0 +1,18 @@
+Id;Name;ParentId
+1;Roman;
+2;Sachbuch;
+3;Krimi;1
+4;Fantasy;1
+5;Liebesroman;1
+6;Klassiker;1
+7;Wissenschaft;2
+8;Geschichte;2
+9;Biografie;2
+10;Philosophie;2
+11;Thriller;3
+12;Detektivroman;3
+13;Sci-Fi;4
+14;High Fantasy;4
+15;Physik;7
+16;Astronomie;7
+17;Soziologie;7

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SmartHome>
+  <Raum Name="Wohnzimmer">
+    <Lampe Name="Decke" An="false" Helligkeit="0" />
+    <Lampe Name="Stehlampe" An="false" Helligkeit="0" />
+    <Lampe Name="Tischlampe" An="false" Helligkeit="0" />
+    <Sensor Name="Helligkeit" Wert="50" Einheit="lux" />
+    <Sensor Name="Temperatur" Wert="22" Einheit="C" />
+  </Raum>
+  <Raum Name="Schlafzimmer">
+    <Lampe Name="Decke" An="false" Helligkeit="0" />
+    <Lampe Name="Nachttisch" An="false" Helligkeit="0" />
+    <Sensor Name="Helligkeit" Wert="10" Einheit="lux" />
+    <Sensor Name="Temperatur" Wert="20" Einheit="C" />
+  </Raum>
+  <Raum Name="Kueche">
+    <Lampe Name="Decke" An="false" Helligkeit="0" />
+    <Lampe Name="Arbeitsplatte" An="false" Helligkeit="0" />
+    <Sensor Name="Helligkeit" Wert="30" Einheit="lux" />
+    <Sensor Name="Temperatur" Wert="21" Einheit="C" />
+  </Raum>
+  <Raum Name="Bad">
+    <Lampe Name="Decke" An="false" Helligkeit="0" />
+    <Lampe Name="Spiegel" An="false" Helligkeit="0" />
+    <Sensor Name="Temperatur" Wert="23" Einheit="C" />
+    <Sensor Name="Luftfeuchtigkeit" Wert="55" Einheit="%" />
+  </Raum>
+</SmartHome>
